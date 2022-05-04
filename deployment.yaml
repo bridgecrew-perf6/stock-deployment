@@ -8,14 +8,14 @@ spec:
   # 用来查找关联的 Pod，所有标签都匹配才行
   selector:
     matchLabels:
-      app: stock-batch
+      app: stock-ui
   # 定义 Pod 相关数据
   template:
     metadata:
       labels:
-        app: stock-batch
+        app: stock-ui
     spec:
       # 定义容器，可以多个
       containers:
-      - name: stock-batch
-        image: url/stock-batch
+      - name: stock-ui
+        image: huangyuan3h/stock-ui
