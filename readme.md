@@ -20,6 +20,11 @@ start minikube dashboard:
  minikube dashboard
 ```
 
+start minikube tunnel
+```bash
+minikube tunnel
+```
+
 deploy to minikube
 
 ```bash

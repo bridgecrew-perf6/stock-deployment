@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: test-k8s
+  name: stock-ui
 spec:
   selector:
-    app: test-k8s
-  type: ClusterIP
+    app: stock-ui
+  type: LoadBalancer
   ports:
-    - port: 8080        # 本 Service 的端口
-      targetPort: 8080  # 容器端口
+    - port: 3001        # 本 Service 的端口
+      targetPort: 3000  # 容器端口
