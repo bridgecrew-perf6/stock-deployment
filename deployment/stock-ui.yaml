@@ -2,7 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   # 部署名字
-  name: stock
+  name: stock-app
+  namespace: stock
 spec:
   replicas: 1
   # 用来查找关联的 Pod，所有标签都匹配才行

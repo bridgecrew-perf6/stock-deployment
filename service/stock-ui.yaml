@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: stock-ui
+  name: stock-app-service
+  namespace: stock
 spec:
   selector:
-    app: stock-ui
+    app: stock-app
   type: LoadBalancer
   ports:
     - port: 3001        # 本 Service 的端口
